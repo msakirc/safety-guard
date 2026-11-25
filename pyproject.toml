@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safety_guard"
+version = "0.1.0"
+description = "Pre-action guard for agent shell commands: hard blocklist, git collision guards, reversibility-based approval."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Sakir Cimen" }]
+keywords = ["ai-safety", "guardrails", "ai-agents", "shell", "git", "kutai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/msakirc/safety-guard"
+Repository = "https://github.com/msakirc/safety-guard"
+Monorepo = "https://github.com/msakirc/kutai/tree/main/packages/safety_guard"
+
+[tool.setuptools.packages.find]
+where = ["src"]
